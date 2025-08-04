@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2j5ka8a1mteu"]
+
+[ext_resource type="Script" uid="uid://c7v1pr01qs630" path="res://game.gd" id="1_80nbo"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_80nbo")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 617.0
+offset_bottom = 429.0
+
+[node name="CookieButton" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 263.0
+offset_top = 287.0
+offset_right = 360.0
+offset_bottom = 340.0
+text = "Cookie"
+metadata/_edit_use_anchors_ = true
+
+[node name="ShopContainer" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 31.0
+offset_top = 105.0
+offset_right = 131.0
+offset_bottom = 322.0
+
+[node name="CookieCountLabel" type="Label" parent="."]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+offset_left = 268.0
+offset_top = 102.0
+offset_right = 371.0
+offset_bottom = 172.0
+
+[connection signal="pressed" from="CookieButton" to="." method="_on_cookie_button_pressed"]
