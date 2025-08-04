@@ -42,4 +42,3 @@ autostart = true
 
 [connection signal="pressed" from="CookieButton" to="." method="_on_cookie_button_pressed"]
 [connection signal="timeout" from="CookiesPerSecTimer" to="." method="_on_cookies_per_sec_timer_timeout"]
-[connection signal="timeout" from="CookiesPerSecTimer" to="." method="_on_timer_timeout"]

@@ -54,7 +54,7 @@ func _on_upgrade_pressed(upgrade):
 
 
 
-#  Refresh  label with cookies
+#  Refresh  label with cookies amount
 func update_ui()-> void:
 	$CookieCountLabel.text = "Cookies: %d" % cookies
 
